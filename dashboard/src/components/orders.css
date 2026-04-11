@@ -1,0 +1,13 @@
+.new-order-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+th, td {
+    padding: 12px 100px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
