@@ -300,6 +300,7 @@ hr {
   align-items: center;
   justify-content: space-evenly;
   margin-left: 20px;
+  position: relative;
 }
 
 .profile .avatar {
@@ -337,6 +338,33 @@ hr {
 .profile:hover .username {
   cursor: pointer;
   color: rgb(223, 91, 43);
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 38px;
+  right: 0;
+  z-index: 10;
+  min-width: 100px;
+  padding: 6px;
+  background: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.profile-dropdown button {
+  width: 100%;
+  padding: 8px 12px;
+  border: 0;
+  background: transparent;
+  color: rgb(70, 70, 70);
+  cursor: pointer;
+  text-align: left;
+}
+
+.profile-dropdown button:hover {
+  color: rgb(245, 104, 52);
+  background: #fafafa;
 }
 
 .orders {

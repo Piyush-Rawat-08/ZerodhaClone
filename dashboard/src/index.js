@@ -4,6 +4,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import Home from "./components/Home";
 
+const username = new URLSearchParams(window.location.search).get("username");
+if (username) {
+  localStorage.setItem("username", username);
+  window.history.replaceState({}, document.title, window.location.pathname);
+}
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

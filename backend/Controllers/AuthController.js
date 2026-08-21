@@ -40,7 +40,7 @@ module.exports.Signup = async (req, res, next) => {
 
 module.exports.Login = async(req,res,next)=>{
   try{
-    const {email,password} = req.body;
+    const {email,password,username} = req.body;
     if ( !email|| !password){
       return res.status(400).json({
         message:"all fields are required",
@@ -70,6 +70,7 @@ module.exports.Login = async(req,res,next)=>{
     return res.status(201).json({
       message:"user Logged in successfully",
       success: true,
+      username: user.username,
     });
   } catch(error){
     console.error(error);
@@ -79,3 +80,11 @@ module.exports.Login = async(req,res,next)=>{
     });
   }
 }
+
+module.exports.Logout = (req, res) => {
+  res.clearCookie("token", {
+    httpOnly: true,
+    sameSite: "strict",
+  });
+  return res.json({ success: true, message: "Logged out successfully" });
+};

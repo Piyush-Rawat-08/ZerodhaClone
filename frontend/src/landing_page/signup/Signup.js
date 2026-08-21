@@ -39,8 +39,9 @@ const Signup = () => {
         },
         { withCredentials: true }
       );
-      const { success, message } = data;
+      const { success, message, user } = data;
       if (success) {
+        localStorage.setItem("username", user.username);
         handleSuccess(message);
         setInputValue({
           email: "",
@@ -49,7 +50,9 @@ const Signup = () => {
         });
         setTimeout(() => {
           // Redirect to dashboard app
-          window.location.href = "http://localhost:3001";
+          window.location.href = `http://localhost:3001?username=${encodeURIComponent(
+            user.username
+          )}`;
         }, 1000);
       } else {
         handleError(message);

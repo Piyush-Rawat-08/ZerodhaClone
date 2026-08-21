@@ -39,12 +39,15 @@ const Login = () => {
         { withCredentials: true }
       );
       console.log(data);
-      const { success, message } = data;
+      const { success, message, username } = data;
       if (success) {
+        localStorage.setItem("username", username);
         handleSuccess(message);
         setTimeout(() => {
           // Redirect to dashboard app
-          window.location.href = "http://localhost:3001";
+          window.location.href = `http://localhost:3001?username=${encodeURIComponent(
+            username
+          )}`;
         }, 1000);
       } else {
         handleError(message);
