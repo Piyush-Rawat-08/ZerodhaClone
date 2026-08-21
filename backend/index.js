@@ -19,7 +19,7 @@ const e = require("express");
 const app = express();
 
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:3001"],
+  origin: [process.env.REACT_APP_FRONTEND_URL, process.env.REACT_APP_DASHBOARD_URL],
   credentials: true,
 }));
 app.use(bodyParser.json());

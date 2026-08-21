@@ -32,7 +32,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/login",
+        `${process.env.REACT_APP_BACKEND_URL}/login`,
         {
           ...inputValue,
         },
@@ -45,7 +45,7 @@ const Login = () => {
         handleSuccess(message);
         setTimeout(() => {
           // Redirect to dashboard app
-          window.location.href = `http://localhost:3001?username=${encodeURIComponent(
+          window.location.href = `${process.env.REACT_APP_DASHBOARD_URL}?username=${encodeURIComponent(
             username
           )}`;
         }, 1000);

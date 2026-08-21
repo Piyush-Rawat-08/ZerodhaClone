@@ -15,7 +15,7 @@ const Orders = () => {
 
   const fetchOrders = () => {
     axios
-      .get("http://localhost:5000/allOrders")
+      .get(`${process.env.REACT_APP_BACKEND_URL}/allOrders`)
       .then((res) => {
         setAllOrders(res.data);
       })

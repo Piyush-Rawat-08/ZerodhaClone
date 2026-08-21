@@ -33,7 +33,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/signup",
+        `${process.env.REACT_APP_BACKEND_URL}/signup`,
         {
           ...inputValue,
         },
@@ -50,7 +50,7 @@ const Signup = () => {
         });
         setTimeout(() => {
           // Redirect to dashboard app
-          window.location.href = `http://localhost:3001?username=${encodeURIComponent(
+          window.location.href = `${process.env.REACT_APP_DASHBOARD_URL}?username=${encodeURIComponent(
             user.username
           )}`;
         }, 1000);

@@ -17,12 +17,12 @@ const Menu = () => {
 
   const handleLogout = async (event) => {
     event.stopPropagation();
-    await fetch("http://localhost:5000/logout", {
+    await fetch(`${process.env.REACT_APP_BACKEND_URL}/logout`, {
       method: "POST",
       credentials: "include",
     });
     localStorage.removeItem("username");
-    window.location.href = "http://localhost:3000/login";
+    window.location.href = `${process.env.REACT_APP_FRONTEND_URL}/login`;
   };
 
   const menuClass = "menu";
