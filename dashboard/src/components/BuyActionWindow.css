@@ -218,3 +218,37 @@
   background: #9b9b9b;
   color: #fff;
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 24px);
+    height: auto;
+    max-height: calc(100vh - 24px);
+    overflow-y: auto;
+    left: 12px;
+    bottom: 12px;
+  }
+
+  .regular-order {
+    padding: 16px;
+  }
+
+  .order-validity {
+    width: 100%;
+  }
+
+  .inputs fieldset {
+    min-width: 0;
+    width: 50%;
+  }
+
+  .inputs fieldset input {
+    width: 100%;
+    max-width: none;
+  }
+
+  .buttons {
+    top: 0;
+    padding: 16px 0 0;
+  }
+}

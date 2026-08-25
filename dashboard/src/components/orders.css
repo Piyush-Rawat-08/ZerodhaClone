@@ -11,3 +11,15 @@ th, td {
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
+
+@media (max-width: 768px) {
+    .new-order-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 12px 16px;
+    }
+}

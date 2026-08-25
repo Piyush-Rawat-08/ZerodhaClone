@@ -870,5 +870,184 @@ hr {
   background-color: rgb(212, 212, 212);
 }
 
+@media (max-width: 768px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .topbar-container {
+    height: auto;
+    min-height: 108px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .indices-container {
+    flex-basis: auto;
+    width: 100%;
+    height: 44px;
+    padding: 6px 12px;
+    border-right: 0;
+    border-bottom: 1px solid rgb(224, 224, 224);
+  }
+
+  .menu-container {
+    flex-basis: auto;
+    width: 100%;
+    min-height: 64px;
+    padding: 10px 12px;
+  }
+
+  .menus {
+    min-width: 0;
+    width: calc(100% - 58px);
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .menus ul {
+    display: flex;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0 4px;
+  }
+
+  .menus li {
+    margin-right: 18px;
+  }
+
+  .menus li:last-child {
+    margin-right: 4px;
+  }
+
+  .profile {
+    flex-shrink: 0;
+    margin-left: 12px;
+  }
+
+  .profile .username {
+    max-width: 72px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .dashboard-container {
+    height: auto;
+    min-height: calc(100vh - 108px);
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .watchlist-container {
+    flex-basis: auto;
+    width: 100%;
+    height: auto;
+    max-height: 42vh;
+    flex-shrink: 0;
+  }
+
+  .content {
+    flex-basis: auto;
+    width: 100%;
+    height: auto;
+    min-height: 58vh;
+    padding: 24px 16px 32px;
+  }
+
+  .data {
+    width: 100%;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .data .first h3 {
+    font-size: 2rem;
+  }
+
+  .data .second {
+    min-width: 0;
+  }
+
+  .data .second p {
+    white-space: normal;
+    text-align: right;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .col {
+    flex-basis: 100%;
+  }
+
+  .table {
+    padding: 20px 16px;
+  }
+
+  .order-table {
+    overflow-x: auto;
+  }
+
+  .order-table table,
+  .new-order-table {
+    min-width: 620px;
+  }
+
+  .order-table th,
+  .order-table td {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .menus {
+    width: calc(100% - 48px);
+  }
+
+  .profile {
+    margin-left: 6px;
+  }
+
+  .profile .username {
+    display: none;
+  }
+
+  .indices-container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .index,
+  .index-points,
+  .percent {
+    font-size: 0.7rem;
+  }
+
+  .content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .username h6 {
+    font-size: 1.25rem;
+  }
+
+  .section span p {
+    font-size: 1rem;
+  }
+}
+
 
 
