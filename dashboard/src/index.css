@@ -904,13 +904,12 @@ hr {
   .menus {
     min-width: 0;
     width: calc(100% - 58px);
-    overflow-x: auto;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .menus ul {
     display: flex;
-    flex-shrink: 0;
+    overflow-x: auto;
     margin: 0;
     padding: 0 4px;
   }

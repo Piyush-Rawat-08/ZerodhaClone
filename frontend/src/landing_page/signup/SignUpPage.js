@@ -11,7 +11,9 @@ function SignUpPage() {
             <Navbar />
             <div className="container">
                 <div className="row">
-                    <img src= "media/images/signup.png" alt="signup" style={{width:"50%", margin:"0 auto"}} className="mt-5"/>
+                    <div className="col-12 col-md-8 mx-auto mt-5 text-center">
+                        <img src="media/images/signup.png" alt="signup" className="img-fluid"/>
+                    </div>
                     <OpenAccount />
                 </div>
             </div>

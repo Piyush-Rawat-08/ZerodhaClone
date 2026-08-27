@@ -26,7 +26,7 @@ const Orders = () => {
 
   if (allOrders.length === 0) {
     return (
-      <div>
+      <div className="no-orders">
         <h3 className="title">No orders placed yet</h3>
         <Link to={"/"} className="btn">
           Get started
@@ -36,18 +36,19 @@ const Orders = () => {
   };
   if (allOrders.length > 0) {
     return (
-    <div className="orders">  
-      <div className="no-orders">
-        <h3 className="title">Orders Placed({allOrders.length})</h3>
-        <div className="new-order-table">
-          <table>
+    <div className="orders" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>  
+      <h3 className="title">Orders Placed ({allOrders.length})</h3>
+      <div className="new-order-table" style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}>
+        <table style={{ width: '100%' }}>
+          <thead>
             <tr>
               <th>Name</th>
               <th>Qty</th>
               <th>Price</th>
               <th>Mode</th>
             </tr>
-
+          </thead>
+          <tbody>
             {allOrders.map((stock, index) => {
               return (
                 <tr key={index}>
@@ -58,8 +59,8 @@ const Orders = () => {
                 </tr>
               );
             })}
-          </table>
-        </div>
+          </tbody>
+        </table>
       </div>
     </div>
   )};
