@@ -170,3 +170,25 @@ footer p {
     font-size: 1rem;
   }
 }
+.home-section-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.home-section-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 767.98px) {
+  .home-section-text h1 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+  }
+
+  .home-section-text p {
+    line-height: 1.6;
+  }
+}
