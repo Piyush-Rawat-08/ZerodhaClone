@@ -4,7 +4,7 @@ function CreateTicket() {
         <div className="container">
             <div className="row p-5 mt-3 ">
                 <h1 className="fs-3 mx-4">To create a ticket , Select a relevant topic</h1>
-                <div className="col-4 p-5 mt-2 mb-2">
+                <div className="col-12 col-md-4 p-3 p-md-5 mt-2 mb-2">
                     <h4 className="fw-normal fs-5"><i class="fa fa-circle-plus" aria-hidden="true"></i>Account opening</h4>
                     <a href=""style={{textDecoration:'none',lineHeight:'2.5'}}>Online Account Opening</a>
                     <br/>
@@ -23,7 +23,7 @@ function CreateTicket() {
                     <a href=""style={{textDecoration:'none',lineHeight:'2.5'}}>Getting Started</a>
                     <br/>
                 </div>
-                <div className="col-4 p-5 mt-2 mb-2">
+                <div className="col-12 col-md-4 p-3 p-md-5 mt-2 mb-2">
                     <h4 className="fw-normal fs-5"><i class="fa-solid fa-user"></i>Your Zerodha Account</h4>
                     <a href=""style={{textDecoration:'none',lineHeight:'2.5'}}>Login Credentials</a>
                     <br/>
@@ -36,7 +36,7 @@ function CreateTicket() {
                     <a href=""style={{textDecoration:'none',lineHeight:'2.5'}}>Transfer and conversion of shares</a>
                     <br/>
                 </div>
-                <div className="col-4 p-5 mt-2 mb-2">
+                <div className="col-12 col-md-4 p-3 p-md-5 mt-2 mb-2">
                     <h4 className="fw-normal fs-5"><i class="fa-solid fa-chart-column"></i>Your Zerodha Account</h4>
                     <a href=""style={{textDecoration:'none',lineHeight:'2.5'}}>Margin/leverage, product and order types</a>
                     <br/>
@@ -57,7 +57,7 @@ function CreateTicket() {
                     <a href=""style={{textDecoration:'none',lineHeight:'2.5'}}>GTT</a>
                     <br/>
                 </div>
-                <div className="col-4 p-5 mt-2 mb-2">
+                <div className="col-12 col-md-4 p-3 p-md-5 mt-2 mb-2">
                     <h4 className="fw-normal fs-5"><i class="fa-regular fa-credit-card"></i>Funds</h4>
                     <a href=""style={{textDecoration:'none',lineHeight:'2.5'}}>Adding Funds</a>
                     <br/>
@@ -68,7 +68,7 @@ function CreateTicket() {
                     <a href=""style={{textDecoration:'none',lineHeight:'2.5'}}>Adding Bank Account</a>
                     <br/>
                 </div>
-                <div className="col-4 p-5 mt-2 mb-2">
+                <div className="col-12 col-md-4 p-3 p-md-5 mt-2 mb-2">
                     <h4 className="fw-normal fs-5"><i class="fa-solid fa-circle"></i>Console</h4>
                     <a href=""style={{textDecoration:'none',lineHeight:'2.5'}}>Reports</a>
                     <br/>
@@ -83,7 +83,7 @@ function CreateTicket() {
                     <a href=""style={{textDecoration:'none',lineHeight:'2.5'}}>Referral Program</a>
                     <br/>
                 </div>
-                <div className="col-4 p-5 mt-2 mb-2">
+                <div className="col-12 col-md-4 p-3 p-md-5 mt-2 mb-2">
                     <h4 className="fw-normal fs-5"><i class="fa-regular fa-circle"></i>Coin</h4>
                     <a href=""style={{textDecoration:'none',lineHeight:'2.5'}}>Understanding Mutual Funds</a>
                     <br/>

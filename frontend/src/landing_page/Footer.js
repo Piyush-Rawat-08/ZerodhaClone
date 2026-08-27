@@ -3,9 +3,9 @@ import React from "react";
 function Footer() {
   return (
     <footer style={{ backgroundColor: "rgb(250,250,250)" }}>
-      <div className="container border-top p-5 ">
+      <div className="container border-top p-3 p-md-5">
         <div className="row ">
-          <div className="col">
+          <div className="col-12 col-sm-6 col-lg-3 mb-4">
             <img
               src="media/images/logo.svg"
               alt="logo"
@@ -25,7 +25,7 @@ function Footer() {
             <a href="" className="text-muted"><i class="fa-brands fa-whatsapp "></i></a>
             <a href="" className="text-muted"><i class="fa-brands fa-telegram "></i></a>
           </div>
-          <div className="col mx-3">
+          <div className="col-12 col-sm-6 col-lg-3 mb-3">
             <p className="fs-5">Account</p>
             <a href="" className="text-muted fs-6">
               Open demat account
@@ -60,7 +60,7 @@ function Footer() {
             </a>
             <br /><br />
           </div>
-          <div className="col">
+          <div className="col-12 col-sm-6 col-lg-3 mb-3">
             <p className="fs-5">Support</p>
             <a href="" className="text-muted fs-6">Contact us</a>
             <br /><br />
@@ -79,7 +79,7 @@ function Footer() {
             <a href="" className="text-muted fs-6">Downloads</a>
             <br /><br />
           </div>
-          <div className="col">
+          <div className="col-12 col-sm-6 col-lg-3 mb-3">
             <p className=" fs-5">Company</p>
             <a href="" className="text-muted fs-6">About</a>
             <br /><br />
