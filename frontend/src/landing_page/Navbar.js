@@ -20,7 +20,7 @@ function Navbar() {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-lg-0">
               <li class="nav-item">
                 <Link class="nav-link text-muted fs-8 active" aria-current="page" to="/signup">
                   Signup

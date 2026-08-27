@@ -152,16 +152,16 @@ function Footer() {
           have access to the exchange investor grievance redressal forum, SEBI
           SCORES/ODR, or arbitration mechanism for such products.</p>
         </div>
-        <div className="mt-2 mx-5 p-2" style={{fontSize:"14px"}}>
-            <a href="" className="mx-3 text-muted">NSE</a>
-            <a href="" className="mx-3 text-muted">BSE</a>
-            <a href="" className="mx-3 text-muted">MCX</a> 
-            <a href="" className="mx-3 text-muted">Terms & conditions</a> 
-            <a href="" className="mx-3 text-muted">Policies & procedures</a>
-            <a href="" className="mx-3 text-muted">Privacy policy</a>
-            <a href="" className="mx-3 text-muted">Disclosure</a> 
-            <a href="" className="mx-3 text-muted">For investor's attention</a> 
-            <a href="" className="mx-3 text-muted">Investor charter</a>
+        <div className="mt-2 mx-md-5 p-2 d-flex flex-wrap justify-content-center" style={{fontSize:"14px", gap: "15px"}}>
+            <a href="" className="text-muted">NSE</a>
+            <a href="" className="text-muted">BSE</a>
+            <a href="" className="text-muted">MCX</a> 
+            <a href="" className="text-muted">Terms & conditions</a> 
+            <a href="" className="text-muted">Policies & procedures</a>
+            <a href="" className="text-muted">Privacy policy</a>
+            <a href="" className="text-muted">Disclosure</a> 
+            <a href="" className="text-muted">For investor's attention</a> 
+            <a href="" className="text-muted">Investor charter</a>
         </div>
       </div>
     </footer>

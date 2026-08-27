@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 function Hero() {
     return ( 
-        <div className="container p-5 ">
-            <div className="row text-center p-5">
+        <div className="container p-3 p-md-5">
+            <div className="row text-center p-3 p-md-5">
                 <img src="media/images/homeHero.png" alt="Hero Image" className="hero-image mb-3"/>
                 <h1 className="mt-3">Invest In Everything</h1>
                 <p className="mt-3">Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</p>

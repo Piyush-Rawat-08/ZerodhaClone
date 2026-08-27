@@ -15,9 +15,9 @@ function Pricing() {
           </a>
         </div>
         <div className="d-none d-md-block col-md-2"></div>
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 mt-4 mt-md-0">
             <div className="row text-center">
-                <div className="col-12 col-sm-6 p-2 border">
+                <div className="col-12 col-sm-6 p-3 border">
                     <h1 className="mb-3">₹0</h1>
                     <p>Free equity delivery and <br/>direct mutual funds</p>
                 </div>
